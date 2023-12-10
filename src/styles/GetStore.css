@@ -1,0 +1,191 @@
+/*===========First Dev===========*/
+.firstDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 150px 0;
+}
+.firstDiv .leftDiv{
+    font-size: 45px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+.firstDiv .leftDiv span:nth-child(3){
+    font-size: 30px;
+}
+.firstDiv .leftDiv span{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    margin-bottom: 40px;
+    line-height: 60px;
+}
+.dolar{
+    font-size: 30px;
+    display: flex;
+    font-weight: bold;
+}
+.dolar span{
+    color: #f95731;
+    margin-left: 6px;
+}
+.buttons .links{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.links img{
+    margin:0px 0px 10px 0;
+    border-radius: 10px;
+}
+.QrCode{
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #333;
+    margin-left: 20px;
+    padding: 10px;
+    width: 200px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+
+/*===========Second Dev===========*/
+
+.secondDiv{
+    background-color: #ebefff;
+    padding: 90px 0;
+}
+.secondDiv h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;   
+}
+.items{
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.items .list span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    max-width: 300px;
+}
+.items .list .div{
+    font-weight: 700;
+}
+
+
+/*===========Third Dev===========*/
+
+
+.thirdDiv{
+    background: #f7fafa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.thirdDiv .firendCheersInfo{
+    font-size: 36px;
+    line-height: 50px;
+    color: #000;
+    font-weight: bold;
+    padding: 0 80px;
+}
+
+
+
+
+/*===========Media Query===========*/
+
+
+
+
+@media (max-width:992px) {
+    .firstDiv {
+        flex-direction: column;
+        text-align: center;
+    }
+    .QrCode {
+        display: none;
+    }
+    .buttons .links img:nth-child(1){
+        display: none;
+        text-align: center;
+    }
+    .items{
+        flex-direction: column;
+    }
+    .buttons{
+        text-align: center;
+        justify-content: center;
+    }
+    .thirdDiv{
+        flex-direction: column-reverse;
+    }
+    .thirdDiv .firendCheersInfo{
+        padding-top: 50px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .items .list span{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .dolar{
+        font-size: 15px;
+        justify-content: center;
+    }
+    .firstDiv .leftDiv span{
+        font-size: 25px;
+    }
+    .thirdDiv .firendCheersInfo{
+        font-size: 20px;
+        padding: 10px;
+    }
+    .secondDiv h1{
+        font-size: 35px;
+        padding: 5px;
+    }
+    .termOfUse {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:667px){
+    .firstDiv .leftDiv span {
+        font-size: 22px;
+    }
+    .dolar {
+        font-size: 12px;
+        color: #666;
+    }
+    .firstDiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 100px 0;
+    }
+    .title {
+        margin-bottom: 30px;
+        line-height: 40px;
+    }
+    .nav {
+        padding: 0 15px;
+        height: 60px;
+    }
+    .thirdDiv .firendCheersInfo {
+        font-size: 13px;
+
+    }
+}

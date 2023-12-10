@@ -1,0 +1,273 @@
+.slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+    position: relative; 
+}
+.slides input{
+    display: none;
+}
+.image{
+    width: 20%;
+    transition: 2s; 
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.navigationManual{
+    position: absolute;
+    bottom: 20px;
+    display: grid;
+    place-content: center;
+    display: none;
+} 
+.manualBtn{
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.manualBtn:not(:last-child){
+    margin-right: 20px;
+}
+#radio1:checked ~.first{
+    margin-left: 0;
+}
+#radio2:checked ~.first{
+    margin-left: -20%;
+}
+#radio3:checked ~.first{
+    margin-left: -40%;
+}
+
+
+
+
+.navigationAuto{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+.navigationAuto div{
+    border: 2px solid #c1c1c1;
+    padding: 4.5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    background: #c1c1c1;
+}
+.navigationAuto div:not(:last-child){
+    margin-right: 20px; 
+}
+
+#radio1:checked ~.navigationAuto div.autoBtn1{
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    width: 40PX;
+}
+
+#radio2:checked ~.navigationAuto div.autoBbtn2{
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    width: 40px;
+}
+
+#radio3:checked ~.navigationAuto div.autoBtn3{
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    width: 40px;
+}
+
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn button{
+    position: absolute;
+    bottom: 50px;
+    padding: 15px;
+    border-radius: 13px;
+    border: 1.5px solid hsla(0,0%,100%,.49);
+    background: hsla(0,0%,100%,.89);
+    color: #000;
+    font-family: Helvetica;
+    font-size: 28px;
+    cursor: pointer;
+}
+.btn button:hover{
+    color: #fff;
+    background-color: hsla(0,0%,100%,.3)
+}
+
+
+
+
+.explore h1{
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+.threeExplore{
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.singleExplore h5{
+    margin-top: 10px;
+}
+.singleExplore p{
+    max-width: 300px;
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0 10px;
+    line-height: 18px;
+}
+
+.imgBeans .img img{
+    text-align: center;
+    position: relative;
+    padding: 0 30px;
+    z-index: -999;
+}
+.imgBeans {
+    position: relative;
+}
+.textPhotoBeans{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    color: #fff;
+}
+
+.textPhotoBeans h1{
+    max-width: 600px;
+    font-size: 40px;
+    z-index: 1;
+}
+.textPhotoBeans p{
+    max-width: 500px;
+    font-size: 20px;
+    margin-top: 40px;
+    opacity: 0.8;
+    line-height: 27px;
+}
+.imgBeans::before{
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    left: 88px;
+    top: 70px;
+    background: #0a2db8;
+    border-radius: 50%;
+}
+
+.wbc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.Champions h1{
+    font-size: 32px;
+    padding: 50px 0 30px 0;
+}
+.Champions .line{
+    border: 1px solid #333;
+    width: 100px;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+.Champions p{
+    padding: 50px 0 30px 0;
+    font-size: 18px;
+    line-height: 27px;
+    max-width: 700px;
+    letter-spacing: 0.5px;
+}
+
+
+.FreshlyRoasted{
+    position: relative;
+    padding: 0 30px 30px;
+
+}
+.textFreshlyRoasted{
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    color: #fff;
+}
+.textFreshlyRoasted img{
+    margin-bottom: 30px;
+}
+.textFreshlyRoasted h1{
+    font-size: 44px;
+}
+.textFreshlyRoasted .line{
+    border: 1px solid #fff;
+    width: 100px;
+    margin-top: 30px;
+    opacity: 0.7;
+}
+.textFreshlyRoasted p{
+    margin-top: 30px;
+    max-width: 500px;
+    line-height: 20px;
+    letter-spacing:.2px;
+    opacity: 0.9;
+}
+
+.photoGirl{
+    position: relative;
+}
+.textGirl{
+    position: absolute;
+    bottom: 80px;
+    right: 120px;
+    max-width: 750px;
+    color: #fff;
+    font-size: 20px;
+}
+.textGirl h1:nth-child(1){
+    position: absolute;
+    bottom: 250px;
+}
+
+.coffeeStore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+.textCoffee h1{
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+.textCoffee .line{
+    border: 1px solid #333;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    opacity: 0.7;
+}
+.textCoffee p{
+    font-size: 18px;
+    letter-spacing: .1px;
+}

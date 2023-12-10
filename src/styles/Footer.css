@@ -1,0 +1,200 @@
+.footer{
+    background: #0a2db8;
+    padding: 45px 20px;
+}
+.content-logo{
+    border-bottom: 2px solid #fff;
+}
+.content-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
+}
+.info1{
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.info1 a{
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 14px;
+    font-weight: bold;
+}
+.info1 a:hover{
+    color: #fff;
+    opacity: 1;
+}
+.info2 .title-info{
+    color: #fff;
+    opacity: 1;
+}
+.info2 a{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 14px;
+    font-weight: bold;
+}
+.info2 a:hover{
+    color: #fff;
+    opacity: 1;
+
+}
+.termOfUse a{
+    color: #fff;
+    margin-left: 5px;
+}
+.termOfUse{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+@media (max-width:1200px){
+    .photo-content{
+        flex-direction: column;
+    }
+    .responsive{
+        width: 100%;
+        height: auto;
+    }
+    .div-photo-left1 ,.div-photo-left2,.div-photo-left3{
+        position: absolute;
+        color: #fff;
+        padding: 0 40px;
+        max-width: 700px;
+        bottom: 30px;
+        text-shadow: 0 0.04rem 0.08rem rgba(0,0,0,.5);
+    }
+    .div-photo-left1 .line,.div-photo-left2 .line,.div-photo-left3 .line{
+        color: #fff;
+    }
+    .photo-content{
+        padding: 0;
+    }
+}
+
+
+@media (max-width:868px) {
+    #bar{
+        opacity: 1;
+        color: #fff;
+    }
+    .link ul li{
+        display: none;
+    }
+    .menu-bar{
+        position: fixed;
+        background: #0a2db8;
+        width: 300px;
+        height: 100%;
+        padding-top: 10px;
+        right: -300px;
+        z-index: 10;
+        box-shadow: rgb(145 158 171 / 20%) 0px 5px 5px -3px, rgb(145 158 171 / 14%) 0px 8px 10px 1px, rgb(145 158 171 / 12%) 0px 3px 14px 2px;
+    }
+    .link-mobile .bar-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px 25px 0 0;
+        color: #fff;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .link-mobile ul{
+        display: flex;
+        margin-left: 50px;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        font-size: 20px;
+        gap: 20px;
+        list-style: none;
+    }
+    .link-mobile ul li a{
+        color: #ffffff;
+    }
+    .link-mobile ul li a:hover{
+        border-bottom: 1px solid #ffffff;
+    }
+    .link-mobile .vis{
+        border-bottom: 1px solid #fff;
+        width: calc(100% - 165px)
+    }
+}
+
+@media (max-width:992px) {
+    .photo-content{
+        flex-direction: column;
+    }
+    .responsive{
+        width: 100%;
+        height: auto;
+    }
+    .div-photo-left1 ,.div-photo-left2,.div-photo-left3{
+        position: absolute;
+        color: #fff;
+        padding: 0 40px;
+        text-shadow: 0 0.04rem 0.08rem rgba(0,0,0,.5);
+    }
+    .div-photo-left1 .line,.div-photo-left2 .line,.div-photo-left3 .line{
+        color: #fff;
+    }
+    .photo-content{
+        padding: 0;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+@media (max-width:767px){
+    .div-photo-left1 ,.div-photo-left2,.div-photo-left3{
+        padding: 0 3px;
+    }
+    .div-photo-left1 h1,.div-photo-left2 h1,.div-photo-left3 h1{
+        font-size: 30px;
+        text-shadow: 0 0.04rem 0.08rem rgba(0,0,0,.5);
+    }
+    .div-photo-left1 p, .div-photo-left2 p, .div-photo-left3 p{
+        font-size: 16px;
+        line-height: 20px;
+        text-shadow: 0 0.04rem 0.08rem rgba(0,0,0,.5);
+    }
+    .div-photo-left1 .line,.div-photo-left2 .line,.div-photo-left3 .line{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .Value-Proposition-all{
+        flex-direction: column;
+    }
+    .icon-comunication{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:600px) {
+    .nav{
+        padding: 0 20px;
+        height: 60px;
+    }
+}
